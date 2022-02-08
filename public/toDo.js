@@ -10,7 +10,7 @@ let tareasFallidas = {};
 let tareasCompletadas = {};
 
 //Cuando se lee todo el HTML pinte las tareas.
-document.addEventListener("load", () => {
+window.addEventListener("load", () => {
     if(localStorage.getItem("tareas")) {
         console.log(localStorage.getItem("tareas"));
         tareas = JSON.parse(localStorage.getItem("tareas"));
