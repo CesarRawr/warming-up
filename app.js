@@ -8,4 +8,4 @@ app.get("/", (req, res) => {
 	res.sendFile(__dirname + '/public/toDo.html');
 });
 
-app.listen(8080 || process.env.PORT);
+app.listen(process.env.PORT || 8080);
