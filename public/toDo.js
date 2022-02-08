@@ -1,5 +1,3 @@
-console.log("Hola")
-
 const formulario = document.getElementById("formulario");
 const input = document.getElementById("input");
 const listaTareas = document.getElementById("listaTareas");
@@ -14,6 +12,7 @@ let tareasCompletadas = {};
 //Cuando se lee todo el HTML pinte las tareas.
 document.addEventListener("load", () => {
     if(localStorage.getItem("tareas")) {
+        console.log(localStorage.getItem("tareas"));
         tareas = JSON.parse(localStorage.getItem("tareas"));
     }
     pintarTareas();
